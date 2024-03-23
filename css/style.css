@@ -52,7 +52,7 @@ section{
 }
 
 .header.active{
-    /* background-color: var(--white); */
+    background-color: var(--light-bg);
     box-sizing: var(--box-shadow);
     border: 0;
 }
@@ -121,6 +121,32 @@ section{
     color: var(--light-color);
     padding: 1rem 0;
 }
+
+.about .row{
+    min-height: 50vh;
+}
+
+.about .content span{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.about .content p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+
 
 
 
@@ -203,6 +229,15 @@ section{
     }
 
     .home .content h3{
-        font-size: 5rem;
+        font-size: 6rem;
+        padding-bottom: 150px;
+    }
+
+    .home .content p{
+        font-size: 2rem;
+    }
+
+    .home {
+        background-position:right;
     }
 }
