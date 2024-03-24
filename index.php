@@ -161,7 +161,7 @@
 
 
 <section class="reviews" id="reviews">
-    <h1 class="heading">kliente te kenaqur</h1>
+    <h1 class="heading">klientë të kënaqur</h1>
     <div class="box-container container">
 
         <div class="box">
