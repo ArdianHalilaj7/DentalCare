@@ -200,7 +200,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>sara snead</h3>
+            <h3>sara sneaded</h3>
         </div>
 
     </div>
