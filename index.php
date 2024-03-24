@@ -1,3 +1,29 @@
+<?php 
+
+$conn = mysqli_connect('localhost','root','','contact_db') or die ('connection failed');
+
+if(isset($_POST['submit'])){
+
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $number = $_POST['number'];
+    $date = $_POST['date'];
+
+    $insert = mysqli_query($conn,"INSERT INTO `contact_form`(name, email, number, date)
+    VALUES('$name','$email','$number','$date')") or die ('query failed');
+
+    if($insert){
+        $message[] = 'termini u krye me sukses!';
+    }else{
+        $message[] = 'termini deshtoj';
+    }
+
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,6 +159,9 @@
 </section>
 
 
+
+<!-- process  -->
+
 <section class="process">
     <h1 class="heading">procesi punes</h1>
     <div class="box-container container">
@@ -159,6 +188,8 @@
 </section>
 
 
+
+<!-- reviews  -->
 
 <section class="reviews" id="reviews">
     <h1 class="heading">klientë të kënaqur</h1>
@@ -204,6 +235,40 @@
         </div>
 
     </div>
+</section>
+
+
+
+<!-- contact  -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">rezervo termin</h1>
+
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <?php 
+           if(isset($message)){
+              foreach($message as $message){
+                echo '<p class="message">'.$message.'</p>';
+              } 
+            }
+        ?>
+
+
+        <span>your name:</span>
+        <input type="text" name="name" placeholder="enter your name" class="box" required>
+    
+        <span>your email:</span>
+        <input type="email" name="email" placeholder="enter your email" class="box" required>
+    
+        <span>your number:</span>
+        <input type="number" name="number" placeholder="enter your number" class="box" required>
+    
+        <span>data e terminit:</span>
+        <input type="datetime-local" name="date"  class="box" required>
+    
+        <input type="submit" name="submit" value="rezervo termin" class="link-btn">
+
+    </form>
 </section>
 
     
