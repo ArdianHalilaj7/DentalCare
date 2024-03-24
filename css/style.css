@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-    --blue:#00b8b8;
+    --bluee:#00b8b8;
     --black:#333;
     --white:#fff;
     --light-color:#666;
@@ -186,6 +186,38 @@ section{
     font-size: 1rem;
     color: var(--light-color);
 }
+
+.process .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.process .box-container .box{
+    background-color: var(--blue);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.process .box-container .box img{
+    /* height: 20rem; */
+    /* margin: 1rem 0; */
+}
+
+.process .box-container .box h3{
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.process .box-container .box p{
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
 
 
 
