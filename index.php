@@ -27,6 +27,7 @@ if(isset($_POST['submit'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="dc-icon" href="images/iconurl2.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Care</title>
