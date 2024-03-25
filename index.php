@@ -254,14 +254,14 @@ if(isset($_POST['submit'])){
         ?>
 
 
-        <span>your name:</span>
-        <input type="text" name="name" placeholder="enter your name" class="box" required>
+        <span>emri dhe mbiemri:</span>
+        <input type="text" name="name" placeholder="sheno emrin tuaj" class="box" required>
     
-        <span>your email:</span>
-        <input type="email" name="email" placeholder="enter your email" class="box" required>
+        <span>emaili:</span>
+        <input type="email" name="email" placeholder="sheno emailin tuaj" class="box" required>
     
-        <span>your number:</span>
-        <input type="number" name="number" placeholder="enter your number" class="box" required>
+        <span>numri telefonit:</span>
+        <input type="number" name="number" placeholder="sheno numrin e telefonit" class="box" required>
     
         <span>data e terminit:</span>
         <input type="datetime-local" name="date"  class="box" required>
@@ -269,6 +269,45 @@ if(isset($_POST['submit'])){
         <input type="submit" name="submit" value="rezervo termin" class="link-btn">
 
     </form>
+</section>
+
+
+
+<!-- footer  -->
+
+<section class="footer">
+    <div class="box-container container">
+
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>numri telefonit</h3>
+            <p>+383-48-521-388</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>adresa jonë</h3>
+            <p>Prishtinë, Kosovë - 10000</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>orari punes</h3>
+            <p>09:00 - 20:00</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>email adresa</h3>
+            <p>ardianhalilaj5@gmail.com</p>
+            <!-- <p>ardi.halilaj7@hotmail.com</p> -->
+        </div>
+
+    </div>
+
+    <div class="credit">&copy; copyright @<?php echo date('Y'); ?>
+<span> | ardian halilaj</span></div>
+
 </section>
 
     
